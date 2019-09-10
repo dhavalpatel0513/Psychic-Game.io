@@ -1,7 +1,7 @@
-// The specific letters that the user typed.
+// Alphabet think by computer
 var computerGuess = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
-// Setting for zero
+// variable with specified value
 var win = 0;
 var losses = 0;
 var guessesLeft = 9;
@@ -9,7 +9,7 @@ var letterUser = [];
 var eachofLetters = null;
 
 
-// Sets the computerGuess variable equal to a random choice from the computerChoice array.
+// create function which take value from main computerguess array
 var computerGuess = computerGuess[Math.floor(Math.random() * computerGuess.length)];
 
 function countGuessesLeft() {
@@ -28,7 +28,7 @@ var restart = function() {
 	var computerGuess = computerGuess[Math.floor(Math.random() * computerGuess.length)];
 }
 
-// When the user presses a key, it will run the following function..
+// when user press the key 
 document.onkeyup = function(event) {
 	guessesLeft--;
 
